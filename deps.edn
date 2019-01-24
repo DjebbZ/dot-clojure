@@ -19,7 +19,7 @@
   ;; latest ClojureScript:
   :cljs {:extra-deps {org.clojure/clojurescript {:mvn/version "RELEASE"}}
          :main-opts ["-m" "cljs.main" "--repl"]}
-
+  
   ;; testing and debugging tools:
   :test {:extra-paths ["test" "src/test/clojure"]
          :extra-deps {org.clojure/test.check {:mvn/version "RELEASE"}}}

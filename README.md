@@ -9,6 +9,9 @@ There are aliases to pull in specific versions of Clojure:
 * `:1.9` -- Clojure 1.9.0
 * ... back to `:1.0` (note: `:1.5` is actually Clojure 1.5.1 to avoid a bug in Clojure 1.5.0)
 
+There's an alias to pull in the latest version of ClojureScript:
+* `:cljs` -- pulls in the stable release of ClojureScript and starts a basic browser-connected REPL
+
 There are aliases to pull in various useful testing and debugging tools:
 * `:test` -- adds both `test` and `src/test/clojure` to your classpath and pulls in the latest stable version of `test.check`
 * `:runner` -- pulls in [Cognitect Labs' `test-runner`](https://github.com/cognitect-labs/test-runner) project and runs any tests it can find
