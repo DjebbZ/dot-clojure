@@ -16,6 +16,10 @@
   :1.10.1 {:override-deps {org.clojure/clojure {:mvn/version "1.10.1"}}}
   :master {:override-deps {org.clojure/clojure {:mvn/version "1.11.0-master-SNAPSHOT"}}}
 
+  ;; latest ClojureScript:
+  :cljs {:extra-deps {org.clojure/clojurescript {:mvn/version "RELEASE"}}
+         :main-opts ["-m" "cljs.main" "--repl"]}
+
   ;; testing and debugging tools:
   :test {:extra-paths ["test" "src/test/clojure"]
          :extra-deps {org.clojure/test.check {:mvn/version "RELEASE"}}}
